@@ -9,7 +9,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - name: log4j Scanning Step
+      - name: Log4j Scanning Step
         id: log4j
         uses: SecureStackCo/actions-log4j@v0.1.2
         with:
