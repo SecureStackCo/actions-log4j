@@ -21,7 +21,7 @@ jobs:
 
 1. Log in to [SecureStack](https://app.securestack.com) and go to the Profile -> GENERATE KEY screen.
 2. Generate an API key and copy the value.
-3. Go to Settings for your GitHub repository and click on Secrets at the bottom left.
+3. Go to Settings for your GitHub repository and click on Secrets -> Actions at the bottom left.
 4. Create a new secret named SECURESTACK_API_KEY_SECRET and paste the value from step 2 into the field.
 
 ## Retreiving your SecureStack Application ID
@@ -29,7 +29,8 @@ jobs:
 1. Log in to [SecureStack](https://app.securestack.com).
 2. Open the application you wish to analyse.
 3. Copy the value of the application id on the View Application screen.
-4. Create a new secret named SECURESTACK_APP_ID and paste the value from step 3 into the field.
+4. Go to Settings for your GitHub repository and click on Secrets -> Actions at the bottom left.
+5. Create a new secret named SECURESTACK_APP_ID and paste the value from step 3 into the field.
 
 
 Made with 💜  by [SecureStack](https://securestack.com)
