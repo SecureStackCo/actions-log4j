@@ -1,0 +1,13 @@
+name: Example Workflow Using the SecureStack log4j scanning Action
+on: push
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log4j Scanning Step
+        id: log4j
+        uses: SecureStackCo/actions-log4j@v0.1.0
+        with:
+          securestack_api_key: ${{ secrets.SECURESTACK_API_KEY_SECRET }}
+          securestack_app_id: ${{ secrets.SECURESTACK_APP_ID }}
+          severity: critical
