@@ -1,4 +1,4 @@
-name: Example Workflow Using the SecureStack log4j scanning Action
+name: Example Workflow Using the SecureStack Log4j Scanning GitHub Action
 on: push
 jobs:
   security:
