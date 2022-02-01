@@ -1,0 +1,19 @@
+name: Test if Log4j scanning can working by manually calling it
+on: [push]
+jobs:
+  Perform-Bloodhound-Scans:
+    runs-on: ubuntu-latest
+    container: securestackau/bloodhound-cli:latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2.4.0
+        with:
+          fetch-depth: '0'
+      - name: SecureStack Manual Log4j scan
+        shell: bash
+        env:
+          BH_APP_ID:  ${{ secrets.SECURESTACK_APP_ID }}
+          BH_API_KEY: ${{ secrets.SECURESTACK_API_KEY }}
+          BH_SEVERITY: critical
+        run:
+          bloodhound-cli code -t java -a $BH_APP_ID
