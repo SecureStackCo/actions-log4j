@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: log4j Scanning Step
         id: log4j
-        uses: SecureStackCo/actions-log4j@v0.1.0
+        uses: SecureStackCo/actions-log4j@v0.1.2
         with:
           securestack_api_key: ${{ secrets.SECURESTACK_API_KEY_SECRET }}
           securestack_app_id: ${{ secrets.SECURESTACK_APP_ID }}
