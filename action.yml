@@ -1,5 +1,6 @@
 name: 'SecureStack Log4j Vulnerability Analysis'
 description: 'Scans your application for the presence of serious vulnerabilities in Log4j'
+branding:
   icon: 'shield'  
   color: 'green'
 inputs:
