@@ -9,6 +9,11 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo for running secrets analysis within workflow
+        id: checkout
+        uses: actions/checkout@v2.4.0
+        with:
+          fetch-depth: 0
       - name: Log4j Scanning Step
         id: log4j
         uses: SecureStackCo/actions-log4j@v0.1.3
