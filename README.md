@@ -19,15 +19,16 @@ jobs:
 ```
 ## Create your SecureStack API Key as GitHub Secret
 
-1. Log in to [SecureStack](https://app.securestack.com) and go to the Profile -> GENERATE KEY screen.
-2. Generate an API key and copy the value.
-3. Go to Settings for your GitHub repository and click on Secrets -> Actions at the bottom left.
-4. Create a new secret named SECURESTACK_API_KEY and paste the value from step 2 into the field.
+1. Create a [SecureStack](https://app.securestack.com) account using your GitHub credentials.  You get 20 scans for free and you don't need to add a credit card.
+2. Once you are logged in go to "Profile" in the black drawer on the left, and then -> GENERATE KEY tab.
+3. Generate an API key and copy the value.
+4. Go to Settings for your GitHub repository and click on Secrets -> Actions at the bottom left.
+5. Create a new secret named SECURESTACK_API_KEY and paste the value from step 2 into the field.
 
 ## Retreiving your SecureStack Application ID
 
 1. Log in to [SecureStack](https://app.securestack.com).
-2. Open the application you wish to analyse.
+2. Open the application you wish to analyse.  If you haven't created a managed application you can follow the directions in this [VIDEO](https://youtu.be/mapgawLMVKg) to create one.  
 3. Copy the value of the application id on the View Application screen.
 4. Go to Settings for your GitHub repository and click on Secrets -> Actions at the bottom left.
 5. Create a new secret named SECURESTACK_APP_ID and paste the value from step 3 into the field.
