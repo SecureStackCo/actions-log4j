@@ -32,7 +32,7 @@ jobs:
 4. Go to Settings for your GitHub repository and click on Secrets -> Actions at the bottom left.
 5. Create a new secret named SECURESTACK_APP_ID and paste the value from step 3 into the field.
 
-### Watch this video to learn how to setup your first GitHub Action with SecureStack
+## Watch this video to learn how to setup your first GitHub Action with SecureStack
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/0sYXsCmY2es/0.jpg)](http://www.youtube.com/watch?v=0sYXsCmY2es "Video Title")
 
 Made with 💜  by [SecureStack](https://securestack.com)
