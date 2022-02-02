@@ -9,7 +9,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo for running secrets analysis within workflow
+      - name: Checkout repo for running log4j analysis
         id: checkout
         uses: actions/checkout@v2.4.0
         with:
